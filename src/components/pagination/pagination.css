@@ -1,0 +1,29 @@
+.prevNextBtn {
+    background: darkgray;
+    padding: 2px;
+    font-size: 16px;
+    color: white;
+    border-radius: 2px;
+    margin: 4px;
+}
+
+.pages {
+    padding: 2px;
+    border-radius: 14px;
+    margin: 4px;
+}
+
+.grayBackGround {
+    background: grey;
+    color: white;
+}
+
+.whiteBackGround {
+    background: white;
+    color: grey;
+}
+
+.dottText {
+    font-size: 13px;
+    font-weight: 800;
+}

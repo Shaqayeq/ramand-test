@@ -1,0 +1,128 @@
+.row {
+    line-height: 55px;
+    padding: 10px 15px 20px;
+    background: #f0f4f8;
+    font-size: 11px;
+    position: relative;
+    border: solid 1px #00bab9;
+    font-weight: 100;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .item {
+    font-size: 13px;
+    text-align: center;
+    direction: rtl;
+    line-height: 10px;
+    float: right;
+    border-left: solid 1px #edeff2;
+    color: #00b276;
+    text-shadow: 0px 0px 0px;
+    position: relative;
+    width: 300px;
+    height: 25px;
+  }
+
+  .item :nth-child(2){
+    border-left: none;
+    color: #f44336;
+    width: 250px;
+  }
+
+  .check-icon {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    margin: 0 auto;
+}
+.check-icon::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    left: 3px;
+    top: -1px;
+    width: 6px;
+    height: 10px;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    transform-origin: bottom left;
+    transform: rotate(45deg)
+}
+
+.close-icon {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 40px;
+    margin: 0 auto;
+}
+.close-icon::after,
+.close-icon::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    background: red;
+    transform: rotate(45deg);
+    border-radius: 5px;
+    top: 8px;
+    left: 1px
+}
+.close-icon:after {
+    transform: rotate(-45deg)
+}
+
+.pen-icon {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: rotate(-45deg) scale(var(--ggs,1));
+    width: 14px;
+    height: 4px;
+    border-right: 2px solid transparent;
+    box-shadow:
+        0 0 0 2px,
+        inset -2px 0 0;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    margin-right: -2px;
+    margin: 0 auto;
+}
+.pen-icon::after,
+.pen-icon::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+}
+.pen-icon::before {
+    background: currentColor;
+    border-left: 0;
+    right: -6px;
+    width: 3px;
+    height: 4px;
+    border-radius: 1px;
+    top: 0
+}
+.pen-icon::after {
+    width: 8px;
+    height: 7px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-right: 7px solid;
+    left: -11px;
+    top: -2px
+}

@@ -1,0 +1,13 @@
+.header{
+    width: 100%;
+    height: 55px;
+    margin: 10px 0;
+    background-color: cadetblue;
+}
+.search-box{
+    position: absolute;
+    right: 8%;
+    top: 21px;
+    height: 25px;
+    direction: rtl;
+}
